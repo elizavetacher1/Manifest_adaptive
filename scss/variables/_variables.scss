@@ -14,10 +14,15 @@ $line-height-primary: 32px;
 $line-height-secondary: 24px; 
 $letter-space: 0.05em;
 
-/***********paddings*************/
-$paddings-mob: 0 10px 63px;
-$paddings-tablet: 0 34px 70px;
-$paddings-desktop: 0 135px 90px;
+/***********paddings_main*************/
+$padd-main-mob: 0 10px 63px;
+$padd-main-tablet: 0 34px 70px;
+$padd-main-desktop: 0 135px 90px;
+
+/***********paddings_footer*************/
+$padd-footer-mob: 50px 10px 50px;
+$padd-footer-tablet: 50px 34px 50px;
+$padd-footer-desktop: 70px 135px 30px;
 
 /***********breakpoints*************/
 $mobile: 320px;

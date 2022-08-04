@@ -10,11 +10,11 @@ body {
 }
 
 .main__container {
-    padding: $paddings-mob;
+    padding: $padd-main-mob;
         @include media ($tablet) {
-            padding: $paddings-tablet; }  
+            padding: $padd-main-tablet; }  
         @include media ($desktop) {
-            padding: $paddings-desktop;
+            padding: $padd-main-desktop;
         }
 }
 
