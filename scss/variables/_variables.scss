@@ -1,1 +1,25 @@
-$bg-color: #F4F4F4;
+/***********colors*************/
+$footer-bg-color: #F4F4F4; 
+$svg-bg-color: #565656;
+
+/***********fonts*************/
+$ffamily-primary: 'Lato', sans-serif;
+$ffamily-secondary: 'Red Hat Display', sans-serif;
+$fsize-primary: 16px;
+$fsize-secondary: 26px;
+$fweight-primary: 400;
+$fweight-secondary: 600;
+$fcolor-default: black;
+$line-height-primary: 32px;
+$line-height-secondary: 24px; 
+$letter-space: 0.05em;
+
+/***********paddings*************/
+$paddings-mob: 0 10px 63px;
+$paddings-tablet: 0 34px 70px;
+$paddings-desktop: 0 135px 90px;
+
+/***********breakpoints*************/
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1440px;
