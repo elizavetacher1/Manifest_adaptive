@@ -2,8 +2,11 @@ footer {
     height: 410px;
     background-color: $footer-bg-color;
     padding: $padd-footer-mob; 
+    margin-top: 70px;
         @include media ($tablet) {
-            padding: $padd-footer-tablet; }
+            padding: $padd-footer-tablet; 
+            margin-top: 90px;
+        }
         @include media ($desktop) {
             height: 300px;
             padding: $padd-footer-desktop;
@@ -35,6 +38,16 @@ footer {
 
 .footer__grid-contacts {
     grid-area: contacts;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+        @include media ($tablet) {
+            font-size: 18px;
+            line-height: 27px;
+        }
+        @include media ($desktop) {
+            text-align: initial;
+        }
 }
 
 .footer__grid-socials {
@@ -67,20 +80,16 @@ h5 {
 }
 
 small {
-    font-size: 12px;
-    line-height: 20px;
     display: block;
-    text-align: center;
-        @include media ($desktop) {
-            text-align: initial;
-        }
 }
 
 .copyright {
-    display: block;
     text-align: center;
-    font-size: 12px;
-    line-height: 20px;
+    line-height: 27px;
+        @include media ($tablet) {
+            line-height: 20px;
+            font-size: 12px;
+        }
 }
 
 

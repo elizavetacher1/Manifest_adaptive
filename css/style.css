@@ -60,6 +60,7 @@ table {
 /***********fonts*************/
 /***********paddings_main*************/
 /***********paddings_footer*************/
+/***********paddings_header*************/
 /***********breakpoints*************/
 body {
   font-family: "Lato", sans-serif;
@@ -72,32 +73,26 @@ body {
   margin: 0 auto;
 }
 
-.main__container {
-  padding: 0 10px 63px;
+header {
+  padding: 0 10px 70px;
 }
 @media screen and (min-width: 768px) {
-  .main__container {
-    padding: 0 34px 70px;
+  header {
+    padding: 0 34px 90px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .main__container {
+  header {
     padding: 0 135px 90px;
   }
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-}
-
 h2 {
   line-height: 24px;
-  letter-spacing: 0.05em;
-  height: 60px;
+  letter-spacing: 0.5em;
   display: table-cell;
   vertical-align: middle;
+  height: 60px;
 }
 @media screen and (min-width: 1440px) {
   h2 {
@@ -107,15 +102,36 @@ h2 {
 
 h1 {
   margin-bottom: 40px;
+  letter-spacing: 0.05em;
+  line-height: 40px;
+  font-size: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   h1 {
+    margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 33px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   h1 {
     margin-bottom: 70px;
+    line-height: 50px;
+    font-size: 48px;
+  }
+}
+
+main {
+  padding: 0 10px;
+}
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 34px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    padding: 0 135px;
   }
 }
 
@@ -124,52 +140,92 @@ h1, h3, h4 {
   font-weight: 600;
 }
 
-h1 {
-  line-height: 50px;
-  font-size: 30px;
-}
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 33px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  h1 {
-    line-height: 64px;
-    font-size: 48px;
-  }
-}
-
 h3, h4 {
   font-size: 26px;
-  line-height: 43.16px;
+  line-height: 40px;
   letter-spacing: 0.1em;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   h3, h4 {
     font-size: 28px;
-    line-height: 46.48px;
-    margin-bottom: 50px;
+    line-height: 40px;
+    margin-bottom: 30px;
   }
 }
 
 p {
   color: #565656;
 }
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 19px;
+    letter-spacing: 0.05em;
+  }
+}
 
-.add-margin {
-  margin-top: 40px;
+.paragraph-add-margin {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .project-overview {
+    width: 570px;
+  }
+}
+
+h4 {
+  line-height: 43.16px;
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    line-height: 46.48px;
+  }
+}
+
+.main__project-overview, .main__initial-sketches {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 1440px) {
+  .main__project-overview, .main__initial-sketches {
+    margin-bottom: 90px;
+  }
+}
+
+.main__user-research {
+  margin-bottom: 63px;
+}
+@media screen and (min-width: 768px) {
+  .main__user-research {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main__user-research {
+    margin-bottom: 90px;
+  }
+}
+
+.main__final {
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 1440px) {
+  .main__final {
+    letter-spacing: 0.05em;
+  }
 }
 
 footer {
   height: 410px;
   background-color: #F4F4F4;
   padding: 50px 10px 50px;
+  margin-top: 70px;
 }
 @media screen and (min-width: 768px) {
   footer {
     padding: 50px 34px 50px;
+    margin-top: 90px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -199,6 +255,20 @@ footer {
 
 .footer__grid-contacts {
   grid-area: contacts;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__grid-contacts {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__grid-contacts {
+    text-align: initial;
+  }
 }
 
 .footer__grid-socials {
@@ -238,22 +308,18 @@ h5 {
 }
 
 small {
-  font-size: 12px;
-  line-height: 20px;
   display: block;
-  text-align: center;
-}
-@media screen and (min-width: 1440px) {
-  small {
-    text-align: initial;
-  }
 }
 
 .copyright {
-  display: block;
   text-align: center;
-  font-size: 12px;
-  line-height: 20px;
+  line-height: 27px;
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    line-height: 20px;
+    font-size: 12px;
+  }
 }
 
 svg {
@@ -274,5 +340,38 @@ a:hover svg {
 @media screen and (min-width: 1440px) {
   .flex-list {
     justify-content: end;
+  }
+}
+
+.mobile-build-frame {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-build-frame {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .mobile-build-frame {
+    display: none;
+  }
+}
+
+.desktop-build-frame {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .desktop-build-frame {
+    display: block;
+    width: 700px;
+    height: 380px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .desktop-build-frame {
+    display: block;
+    width: 1170px;
+    height: 500px;
   }
 }/*# sourceMappingURL=style.css.map */

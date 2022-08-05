@@ -1,37 +1,75 @@
+main {
+    padding: $padd-main-mob;
+        @include media ($tablet) {
+            padding: $padd-main-tablet; }  
+        @include media ($desktop) {
+            padding: $padd-main-desktop;
+        }
+}
+
 h1, h3, h4 {
     font-family: $ffamily-secondary;
     font-weight: $fweight-secondary;
-}
-
-h1 {
-    line-height: 50px;
-    font-size: 30px;
-        @include media ($tablet) {
-            font-size: 33px; }
-                @include media ($desktop) {
-                    line-height: 64px;
-                    font-size: 48px;
-                }
-        
-}
-    
+} 
 
 h3, h4 {
     font-size: $fsize-secondary;
-    line-height: 43.16px;
+    line-height: 40px;
     letter-spacing: 0.1em;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
         @include media ($tablet) {
             font-size: 28px;
-            line-height: 46.48px;
-            margin-bottom: 50px;
+            line-height: 40px;
+            margin-bottom: 30px;
         }
 }
 
 p {
     color: $svg-bg-color;
+        @include media ($tablet) {
+            font-size: 19px;
+            letter-spacing: 0.05em;
+        }
 }
 
-.add-margin {
-    margin-top: 40px;
+.paragraph-add-margin {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
+
+.project-overview {
+    @include media ($desktop) {
+        width: 570px;
+    }
+}
+
+h4 {
+    line-height: 43.16px;
+        @include media ($tablet) {
+            line-height: 46.48px;
+        }
+}
+
+.main__project-overview, .main__initial-sketches {
+    margin-bottom: 70px;
+        @include media ($desktop) {
+            margin-bottom: 90px;
+        }
+}
+
+.main__user-research {
+    margin-bottom: 63px;
+    @include media ($tablet) {
+        margin-bottom: 70px;
+    }
+    @include media ($desktop) {
+        margin-bottom: 90px;
+    }
+}
+
+.main__final {
+    letter-spacing: 0.1em;
+        @include media ($desktop) {
+            letter-spacing: 0.05em;
+        }
+  }

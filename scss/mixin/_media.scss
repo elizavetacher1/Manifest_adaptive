@@ -4,8 +4,8 @@
     }
 }
 
-// @mixin media($breakpoint) {
-//   @media screen  (min-width: $breakpoint)  (max-width: $breakpoint){
-//     @content;
-//   }
-// }
+@mixin media-within ($breakpoint-min, $breakpoint-max) {
+  @media screen and (min-width: $breakpoint-min) and (max-width: $max-width-tablet) {
+    @content;
+  }
+}

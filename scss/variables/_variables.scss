@@ -15,16 +15,22 @@ $line-height-secondary: 24px;
 $letter-space: 0.05em;
 
 /***********paddings_main*************/
-$padd-main-mob: 0 10px 63px;
-$padd-main-tablet: 0 34px 70px;
-$padd-main-desktop: 0 135px 90px;
+$padd-main-mob: 0 10px;
+$padd-main-tablet: 0 34px;
+$padd-main-desktop: 0 135px;
 
 /***********paddings_footer*************/
 $padd-footer-mob: 50px 10px 50px;
 $padd-footer-tablet: 50px 34px 50px;
 $padd-footer-desktop: 70px 135px 30px;
 
+/***********paddings_header*************/
+$padd-header-mob: 0 10px 70px;
+$padd-header-tablet: 0 34px 90px;
+$padd-header-desktop: 0 135px 90px;
+
 /***********breakpoints*************/
 $mobile: 320px;
 $tablet: 768px;
 $desktop: 1440px;
+$max-width-tablet: $desktop - 1;

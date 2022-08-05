@@ -1,9 +1,19 @@
+header {
+    padding: $padd-header-mob;
+        @include media ($tablet) {
+            padding: $padd-header-tablet;
+        }
+        @include media ($desktop) {
+            padding: $padd-header-desktop;
+        }
+}
+
 h2 {
     line-height:  $line-height-secondary;
-    letter-spacing: 0.05em;
-    height: 60px;
+    letter-spacing: 0.5em;
     display: table-cell;
     vertical-align: middle;
+    height: 60px;
         @include media ($desktop) {
             height: 100px;
         }
@@ -11,10 +21,17 @@ h2 {
 
 h1 {
     margin-bottom: 40px;
-        @include media ($tablet) {
+    letter-spacing: 0.05em;
+    line-height: 40px;
+    font-size: 30px;
+        @include media-within ($tablet, $max-width-tablet) {
+            margin-top: 50px;
             margin-bottom: 50px;
-                @include media ($desktop) {
-                    margin-bottom: 70px;
-                }
+            font-size: 33px; }
+        @include media ($desktop) {
+            margin-bottom: 70px;
+            line-height: 50px;
+            font-size: 48px;
         }
 }
+ 
