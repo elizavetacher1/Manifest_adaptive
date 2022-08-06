@@ -74,16 +74,20 @@ body {
 }
 
 header {
+  margin: 0 auto;
+  max-width: 320px;
   padding: 0 10px 70px;
 }
 @media screen and (min-width: 768px) {
   header {
     padding: 0 34px 90px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1440px) {
   header {
     padding: 0 135px 90px;
+    max-width: 1440px;
   }
 }
 
@@ -122,16 +126,20 @@ h1 {
 }
 
 main {
+  max-width: 320px;
+  margin: 0 auto;
   padding: 0 10px;
 }
 @media screen and (min-width: 768px) {
   main {
     padding: 0 34px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1440px) {
   main {
     padding: 0 135px;
+    max-width: 1440px;
   }
 }
 
@@ -322,6 +330,11 @@ small {
   }
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 svg {
   border: 2px solid black;
   width: 50px;
@@ -374,4 +387,4 @@ a:hover svg {
     width: 1170px;
     height: 500px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

@@ -1,9 +1,14 @@
 main {
+    max-width: 320px;
+    margin: 0 auto;
     padding: $padd-main-mob;
         @include media ($tablet) {
-            padding: $padd-main-tablet; }  
+            padding: $padd-main-tablet; 
+            max-width: 768px;
+        }  
         @include media ($desktop) {
             padding: $padd-main-desktop;
+            max-width: 1440px;
         }
 }
 
